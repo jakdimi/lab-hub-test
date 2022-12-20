@@ -3,12 +3,9 @@ include:
   - project: 'wwu-it/ci-templates'
     file: '.gitlab-ci-lint.yml'
     ref: "v13"
-
 stages:
   - build
   - test
   - deploy
-
 yaml_lint:
   extends: .lint-yamllint
-
